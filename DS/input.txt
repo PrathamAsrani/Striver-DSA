@@ -1,0 +1,7 @@
+PGC0    START  -
+-       ENTRY  PGC1, PGC2
+-       EXTRN  PGENT1, PGENT2
+-       DC     A(PGC2-PGC0)
+PGC1    DC     A(PGC1-4),A(PGC1+8)
+PGC2    DC     A(PGC0+PGC2-PGC1)
+-       END

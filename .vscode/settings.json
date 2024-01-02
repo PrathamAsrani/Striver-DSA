@@ -1,0 +1,20 @@
+{
+    "files.associations": {
+        "bitset": "cpp",
+        "string_view": "cpp",
+        "cmath": "cpp",
+        "barrier": "cpp",
+        "chrono": "cpp",
+        "random": "cpp",
+        "latch": "cpp",
+        "limits": "cpp",
+        "semaphore": "cpp",
+        "valarray": "cpp",
+        "ostream": "cpp",
+        "vector": "cpp",
+        "source_location": "c",
+        "array": "cpp",
+        "string": "cpp"
+    },
+    "cmake.sourceDirectory": "/home/prathamasrani/Documents/StriversDSA/DS"
+}
