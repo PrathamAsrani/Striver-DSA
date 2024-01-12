@@ -27,12 +27,12 @@ class priorityQueue
     void ShiftDown(int i)
     {
         int maxElementIdx = i;
-
         int left = leftChild(i);
+        int right = rightChild(i);
+
         if (left < arr.size() && arr[left] > arr[maxElementIdx])
             maxElementIdx = left;
 
-        int right = rightChild(i);
         if (right < arr.size() && arr[right] > arr[maxElementIdx])
             maxElementIdx = right;
 
