@@ -2,57 +2,6 @@
 
 using namespace std;
 
-/*
-class maxHeap
-{
-    int *arr, n, index;
-    public:
-        maxHeap(){
-            arr = new int[INT_MAX];
-            index = 0;
-            arr[0] = -1;
-            n = 0;
-        }
-        void insert(int val){
-            arr[++index] = val;
-            n = index+1;
-            int t = index;
-            while(t > 1){
-                int parentIndex = t/2;
-                if(arr[parentIndex] < arr[t]) swap(arr[parentIndex], arr[t]);
-                else return;
-            }
-        }
-        void print(){
-            for (int i = 1; i < n; i++)
-            {
-                cout << arr[i] << " ";
-            }
-            cout <<"\n";
-        }
-};
-
-int main(int argc, char const *argv[])
-{
-    maxHeap m;
-
-    // m.insert(50);
-    // m.insert(55);
-    // m.insert(53);
-    // m.insert(52);
-    // m.insert(54);
-    // 55 54 53 50 52
-
-    m.insert(4);
-    m.insert(1);
-    m.insert(3);
-    m.insert(5);
-    m.insert(6);
-    m.print();
-    return 0;
-}
-*/
-
 class maxHeap
 {
 private:
