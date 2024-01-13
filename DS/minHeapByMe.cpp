@@ -55,6 +55,8 @@ public:
     }
 
     int extractMIN(){
+        if(arr.empty())
+            return -1;
         int minEle=top();
         swap(arr[0], arr[arr.size() - 1]);
         arr.pop_back();
