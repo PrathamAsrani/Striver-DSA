@@ -8,4 +8,6 @@ int main(){
     for(auto i:nums)
         cout << i << " ";
     cout << "\n";
+    priority_queue<int, vector<int>, greater<int>> pq;
+    cout << pq.top() << "\n";
 }
