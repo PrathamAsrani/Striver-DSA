@@ -60,7 +60,7 @@ gcd(a, b) = gcd(a-b, b), where a>b
 
 long long Solution::gcd(long long a, long long b)
 {
-    while(a  > 0 && b > 0){
+    while(a > 0 && b > 0){
         if(a > b) a = a%b;
         else b = b%a;
     }

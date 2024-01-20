@@ -17,4 +17,15 @@ int main(){
         cout << i << ' ';
     }
     cout << "\n" << *(v.end()) << "\n";
+
+
+    cout << "Hello World\n\n";
+    vector<int> array = {1, 2, 3, 4, 5};
+    int idx = 2;
+    array.insert(array.begin()+(idx+1), 12);
+    array.erase(array.begin()+idx);
+    array.erase(array.begin()+idx-1);
+    for(auto i:array)
+        cout << i << " ";
+    cout << "\n";
 }
