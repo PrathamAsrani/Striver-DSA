@@ -1,23 +1,23 @@
 #include <bits/stdc++.h>
-
+typedef long long ll;
 using namespace std;
 
 class min_heap
 {
-    vector<int> arr;
-    int parent(int i)
+    vector<ll> arr;
+    ll parent(ll i)
     {
         return (i - 1) / 2;
     }
-    int leftChild(int i)
+    ll leftChild(ll i)
     {
         return 2 * i + 1;
     }
-    int rightChild(int i)
+    ll rightChild(ll i)
     {
         return 2 * i + 2;
     }
-    void SwiftUp(int i)
+    void SwiftUp(ll i)
     {
         while (i > 0 && arr[parent(i)] > arr[i])
         {
@@ -25,11 +25,11 @@ class min_heap
             i = parent(i);
         }
     }
-    void SwiftDown(int i)
+    void SwiftDown(ll i)
     {
-        int mini = i;
-        int left = leftChild(i);
-        int right = rightChild(i);
+        ll mini = i;
+        ll left = leftChild(i);
+        ll right = rightChild(i);
 
         if (left < arr.size() && arr[left] < arr[mini])
             mini = left;
@@ -45,23 +45,26 @@ class min_heap
     }
 
 public:
-    void insert(int ele){
+    void insert(ll ele){
         arr.push_back(ele);
         SwiftUp(arr.size()-1);
     }
 
-    int top(){
+    ll top(){
         return arr[0];
     }
 
-    int extractMIN(){
+    ll extractMIN(){
         if(arr.empty())
             return -1;
-        int minEle=top();
+        ll minEle=top();
         swap(arr[0], arr[arr.size() - 1]);
         arr.pop_back();
         SwiftDown(0);
         return minEle;
+    }
+    ll size(){
+        return arr.size();
     }
 
     void display(){
