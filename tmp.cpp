@@ -14,5 +14,9 @@ int main(int argc, char const *argv[])
 
     // or
     cout << (*(umpp[10]))[0] << "\n";
+
+    string s = "abc";
+    string a = s.substr(0, 3);
+    cout << a << "\n";
     return 0;
 }
