@@ -1,13 +1,25 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+/*
+Input :  abcd
+Output :  a 
+          b
+          c
+          d
+          ab
+          bc
+          cd
+          abc
+          bcd
+          abcd
+*/
+
 void longestSubstring(string s, int n)
 {
-    for (int i = 0; i < n; i++)
-    {
-        for (int j = 0; j <= i; j++)
-        {
-            string sub = s.substr(j, i - j + 1);
+    for(int len = 1; len <= s.size(); len++){
+        for(int start = 0; start <= s.size() - len; start++){
+            string sub = s.substr(start, len);
             cout << sub << "\n";
         }
     }
@@ -15,7 +27,7 @@ void longestSubstring(string s, int n)
 
 int main(int argc, char const *argv[])
 {
-    string s = "abc";
+    string s = "abcd";
     longestSubstring(s, 3);
     return 0;
 }
