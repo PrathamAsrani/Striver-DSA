@@ -34,6 +34,15 @@ class Trie{
             }
             return node->isEndOfWord;
         }
+
+        bool startWith(string  prefix){
+            TrieNode *node = root;
+            for(char c: prefix){
+                if(node->children[c-'a'] == nullptr) return false;
+                node = node->children[c-'a'];
+            }
+            return true;
+        }
 };
 
 int main(int argc, char const *argv[])

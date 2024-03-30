@@ -16,5 +16,6 @@
         "array": "cpp",
         "string": "cpp"
     },
-    "cmake.sourceDirectory": "/home/prathamasrani/Documents/StriversDSA/DS"
+    "cmake.sourceDirectory": "/home/prathamasrani/Documents/StriversDSA/DS",
+    "C_Cpp.errorSquiggles": "disabled"
 }
