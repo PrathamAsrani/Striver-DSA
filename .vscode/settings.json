@@ -14,7 +14,10 @@
         "vector": "cpp",
         "source_location": "c",
         "array": "cpp",
-        "string": "cpp"
+        "string": "cpp",
+        "compare": "cpp",
+        "xstddef": "cpp",
+        "xutility": "cpp"
     },
     "cmake.sourceDirectory": "/home/prathamasrani/Documents/StriversDSA/DS",
     "C_Cpp.errorSquiggles": "disabled"

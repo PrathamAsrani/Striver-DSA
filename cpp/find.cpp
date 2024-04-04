@@ -8,6 +8,9 @@ int main(int argc, char const *argv[])
 
     cout << (find(v.begin(), v.end(), 1) != v.end()) ? "true" : "false";
     cout << "\n";
-    cout << count(v.begin(), v.end(), 1);
+    cout << count(v.begin(), v.end(), 1) << "\n";
+
+    sort(v.begin(), v.end());
+    cout << lower_bound(v.begin(), v.end(), 0) - v.begin();
     return 0;
 }
