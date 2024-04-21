@@ -27,7 +27,7 @@ vector<int> KMP_Algorithm(string t, string s)
             if(j != 0)
                 j = prefix[j-1];
             else 
-                i++;
+                i++;    
         }
         if(j == s.size())
             ans.push_back(i-s.size()+1);
