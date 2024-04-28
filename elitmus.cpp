@@ -11,7 +11,7 @@ int helper(vector<int> &arr){
             continue;
         }
         int idx = lower_bound(a.begin(), a.end(), arr[i-1]) - a.begin();
-        if(arr[idx+1] != arr[i]){
+        if(a[idx+1] != arr[i]){
             ans++;
         }
     }
