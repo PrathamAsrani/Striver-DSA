@@ -47,6 +47,7 @@ class Trie{
 
 int main(int argc, char const *argv[])
 {
+    cout << "hii\n";
     Trie *trie = new Trie();
     trie->insert("Hello");
     trie->insert("World");
