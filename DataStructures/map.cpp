@@ -24,7 +24,7 @@ private:
         {
             return new Node(key, Value()); 
         }
-        if (key < node->key)
+        else if (key < node->key)
         {
             node->left = insert(node->left, key);
         }
